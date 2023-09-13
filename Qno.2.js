@@ -3,12 +3,12 @@ function calculateTotalCartValue(...numbers){
     for(let number of numbers){
         total += number;
     }
+    console.log(`The total cart value is ${total}`);
     return total;
 }
 
 
-const value=calculateTotalCartValue(1,2,1,1,5,6,7)
-console.log(`total cart value is `+ value);
+calculateTotalCartValue(1,2,1,1,5,6,7)
 
 
 
