@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>=Qno.2 solution</title>
+    <style>
+       
+
+
+.section-1{
+   
+    max-width: 1200px;
+     width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content-1{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+.content-1 >h3{
+    /* margin-top: 30%; */
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.content-1 > h1{
+    color: #4793e5;
+    font-size: 60px;
+    text-transform: capitalize;
+   margin-top: 5px;
+   margin-bottom: 0px;
+}
+.content-1 > h4{
+    color: #4793e5;
+    font-size: 20px;
+    margin: 30px 0px;
+
+}
+
+
+.content-1 img{
+width: 60%;
+margin-bottom: 20px;
+}
+
+
+
+.section-1 video{
+    width: 80%;
+    border: 0;
+    outline: 0;
+   
+}
+
+@media screen and (min-width:800px) {
+    .section-1 {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+          
+              }
+    .section-1 > video {
+          width: 600px;
+          height: 600px;
+        
+             }
+}
+
+    </style>
+</head>
+<body>
+    <section class="section-1">
+        <div class="content-1">
+            <h3>say hi to</h3>
+            <h1>one card</h1>
+            <h4>co-branded card issuers :</h4>
+            <div class="sponsor-images">
+                <img
+                  src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+                  alt="sponsor1"/>
+              </div>
+              <p>India's best metal credit card. Built with full-stack tech. Backed by
+                the principles of simplicity, transparency, and giving back control to
+                the user.</p>
+
+
+        </div>
+        <video loop autoplay="autoplay" controls>
+            <source
+              src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+              type="video/mp4"
+            />
+          </video>
+    
+
+
+        <!-- <div class="content-2">
+          <video src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4" controls autoplay loop ></video>
+
+        </div> -->
+    </section>
+</body>
+</html>

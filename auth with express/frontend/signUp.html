@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Signup Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input:focus{background: #3897f0;}
+        input {
+            width: 100%;
+            padding: 8px;
+            
+            margin-top: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #3897f0;
+            color: #fff;
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2663a4;
+        }
+
+        #signupForm{
+            display: none;
+
+        }
+        a{color: #777;}
+    </style>
+</head>
+<body>
+    <form action="/api/v1/signup" method="post" id="loginForm">
+        <h2>Instagram Signup </h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"  required autocomplete="current-password">
+
+
+        <label for="bio"></label>
+        <input type="text" id="bio" name="bio">
+
+        <button type="submit" >Sign Up</button>
+       
+
+        <a href="#">Forgot password?</a>
+        <a href="logIn.html"  id="loginLink"> login</a>
+        
+    </form>
+ <!-- ------------------login page ---------------------------------------- -->
+ <!-- <div id="signInForm">
+    <form action="/api/v1/login" method="post">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username2" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password2" name="password" required>
+
+        <button type="submit">Login</button>
+
+        <a href="#" >Forgot password?</a>
+        <a href="#" > Sign up</a>
+    </form>
+
+</div> -->
+
+
+
+
+
+
+
+<!-- <script>
+    document.getElementById('loginLink').addEventListener('click', function() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('signupForm').style.display = 'block';
+    });
+</script> -->
+
+
+
+
+</body>
+</html>
+
+
+

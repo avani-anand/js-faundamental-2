@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant landing page</title>
+    <style>
+        body{
+            font-family: 'Open Sans', 'Helvetica Neue', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+     
+        }
+        
+ /* --------qno.2 styles--------- */
+/* ----------  nav bar ---------- */
+
+.nav-bar{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   text-shadow: #685f5f;
+   align-items: center;padding: 5px 0px;
+   margin-bottom: 10px;
+}
+.nav-bar img{
+    width: 50px;
+    
+}
+
+.nav-bar .nav-items{
+    
+   word-spacing: 30px;
+   list-style: none;
+}
+nav .nav-items a{
+   /* align-self: center; */
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+nav .nav-button{
+    margin-left: 60%;
+   font-weight: bold;
+   border: 0;
+    border-radius: 6px;
+    padding: 10px 0px;
+    background: #0fdb6b;
+    
+    
+}
+
+
+
+
+/* ---------- Qno. 1--------- */
+
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    /* justify-content: center; */
+    align-items: center;
+    gap: 20px;
+   
+}
+.section-1{
+   margin-left: 50px;
+  justify-self:center;
+  /* border-left: 100px solid transparent; */
+
+}
+.section-1 h1{
+    font-size: 40px;
+    margin-top: 100px;
+    text-transform: capitalize;
+   
+}
+.section-1 p{
+margin-top: 30px;
+color: #685f5f;
+}
+.section-1 button{
+    font-size: large;
+   margin-top: 25px;
+    width: 200px;
+    height: 50px;
+    background: #232121;
+    color: #fff;
+    text-transform: capitalize;
+}
+.section-2{
+   height: 100%;
+   max-height: 90vh;
+    background: yellow;
+   
+}
+
+
+
+/* <!-- ------- Qno.3 html--------- --> */
+
+    
+.section3{
+              margin-top: 10px;
+            max-width: 1200px;
+            margin: auto;
+            background: #1e0202f6;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            /* column-gap: 25px; */
+           align-items: center;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .section3 img{
+            width: 150px;
+            padding-top: 15px;
+        }
+        .section3 h1{
+            font-size: 40px;
+            color: white;
+            text-transform: capitalize;
+            margin-top: 16px;
+        }
+        .section3 p{
+            color: #a56464
+        }
+
+   .section3 .min-order,.order-track,.delivery{
+    /* justify-content: center; */
+    margin: 10px 50px;
+    text-align: center;
+   }
+/* --------- Qn0.4 style------------- */
+
+.services{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    padding: 30px 0px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.services img{
+    width: 100%;
+    height: 280px;
+    margin-top:-50px ;/*img jada dikh rha tha isliye lamba v lg rha tha*/
+   text-align: center;
+}
+.services .food{
+    text-align: center;
+    width: 10 0%;
+    margin-bottom: 0px;
+    border-radius: 25px 25px 0px 0px;
+    overflow: hidden; /*photo ka kona oveflow ho rha tha isliye*/
+}
+.services .food h2{
+   font-size: 30px;
+    margin: 0px;
+    padding: 5px 0;
+    text-align: center;
+}
+.services .food p{
+    color: #1b7a1b;
+    margin-top: 0;
+    font-size: 15px;
+    text-align: center;
+   
+}
+.services .text-section {
+        position: relative;
+        background-color: #fff;
+        margin-top: 0px;
+        top: -50px;
+        text-align: left;
+        border: 1px solid black;
+        border-radius: 0px 0px 25px 25px;
+      }
+
+ /* ----------Qno 5 style (footer)---------- */
+
+ footer{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #1e0202f6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    padding: 20px 50px;
+}
+.foody img{
+    width: 300px;
+}
+.section5 h1{
+    color: aliceblue;
+    text-transform: capitalize;
+    /* font-weight: ; */
+}
+.section5 a{
+    display: block;
+    text-decoration: none;
+    color: #a56464;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer p {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 20px;
+        color: #fff;
+      }
+
+
+
+    </style>
+</head>
+<body>
+       <!-- ------- Qno.2 html--------- -->
+       <nav class="nav-bar">
+
+        <img
+        src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+        alt="Logo"
+      />
+        <div class="nav-items">
+            
+                <a href="#">home</a>
+                <a href="#">about</a>
+            <a href="#">contact</a>
+            
+            
+        </div>
+        <button type="button" class="nav-button">login</button>
+    </nav>
+
+
+          <!-- --------- Qno 1---------   -->
+   
+    <div class="container">
+        <div class="section-1">
+            <h1>healthy food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique consequatur hic illum ab cumque praesentium maxime quasi, culpa architecto dicta ratione totam cum minus dolores nam cupiditate quos quibusdam quaerat dolor! Ea voluptatem esse ex mollitia deleniti sequi odit, ab quas in, repudiandae unde aliquid dicta, hic nisi perferendis! Iusto quas laudantium fuga nulla. Blanditiis magnam cupiditate corporis! </p>
+            <button>read more</button>
+        </div>
+        <div class="section-2">
+            <img
+          src="https://media.istockphoto.com/id/870173346/photo/healthy-food.jpg?s=612x612&w=0&k=20&c=g6ewhe862ZaSQevMw7VS-VJzwXXEHL6Gqpr-fEDx0jY="
+          alt="Healthy Food"
+        />
+        </div>
+    </div>
+
+
+    
+    <!-- ------- Qno.3 html--------- -->
+
+
+    <div class="section3">
+        <div class="min-order">
+            <img
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+            alt="Sub Section1"
+          />
+            <h1>no minimum order </h1>
+            <p>order in for yourself or for the group, with no restrictions on order value</p>
+        </div>
+        <div class="order-track">
+            <img
+            src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+            alt="Sub Section2"
+          />
+            <h1>live order tracking</h1>
+            <p>know where your order is at all times, from the resturant to your doorstep</p>
+
+        </div>
+        <div class="delivery">
+            <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+          alt="Sub Section3"
+        />
+            <h1>lightning fast delivery</h1>
+            <p>experience swiggy's superfast delivery for food delivered fresh fit on time</p>
+
+        </div>
+    </div>
+    <!-- ----------------- Qno.4 -------------  -->
+
+    <div class="services">
+        <div class="food">
+            <img
+            src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+            alt="food-img"
+          />
+          <div class="text-section">        
+                <h2>order online</h2>
+            <p>stay home and order to your door step</p>
+         </div>
+        </div>
+        <div class="food">
+            <img
+          src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="food-img"
+        />
+        <div class="text-section">     
+                   <h2>on-site dining</h2>
+            <p>view thw city,s favourite dining vwnues.</p>
+        </div>
+        </div>
+        <div class="food">
+            <img
+          src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+          alt="food-img"
+        />
+      
+   <div class="text-section">      
+          <h2>nightlife & clubs</h2>
+    <p>explore city,s top nightlife outlets & book tables.</p>
+     </div>       
+     </div>
+    </div>
+
+    <!-- ---------- question 5 (footer) ---------  -->
+
+    <footer class="section5">
+        <div class="foody">
+            <img
+        src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+        alt="Logo"/>
+        </div>
+        <div class="nav-links">
+            <h1>navigation links</h1>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">login</a>
+        </div>
+        
+        <div class="more">
+            <h1>learn more</h1>
+            <a href="#">privacy</a>
+            <a href="#">security</a>
+            <a href="#">term</a>
+            <a href="#">sitemap</a>
+        </div>
+        <p>&#169; copyright all rights reserved</p>
+    </footer>
+
+
+</body>
+</html>

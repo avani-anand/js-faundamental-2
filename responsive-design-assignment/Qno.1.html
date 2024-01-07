@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive media assignment Qno.1</title>
+    <style>
+       .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+        body{
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       nav{
+        height: 50px;
+        background: #242b2e;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+       }   
+       .large-screen{
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+       }
+       .small-screens{
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+       }
+         .large-screen>img{
+          width: 50px;
+         }
+         .small-screens>img{
+          width: 50px;
+         }
+         .nav-links a{
+          text-decoration: none;
+          color: #fff;
+          scale: 1.1;
+          gap: 30px;
+
+         }
+         .nav-links a:hover {
+         color: #76b5d3;
+         scale: 1.1;
+         }
+
+
+
+         .large-screen button{
+          padding: 0px 40px;
+          margin: 10px 0px;
+          border: 0px;
+          border-radius: 5px;
+          background: #0072e1;
+          color: #fff;
+          font-weight: bold;
+         }
+
+         .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+         }
+         @media  screen and (min-width:800px) {
+          .large-screen{
+            display: flex;
+          }
+          .small-screens{
+            display: none;
+          }
+         }
+
+    </style>
+</head>
+</head>
+<body>
+  <nav>
+    <section class="large-screen">
+      <img
+        src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a
+        ><a href="#">Contact</a>
+      </div>
+      <button>Login</button>
+    </section>
+
+    <section class="small-screens">
+      <img
+        src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo"/>
+
+      <div>
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+    </section>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+
+    <style>
+
+ /* --------qno.2 styles--------- */
+/* ----------  nav bar ---------- */
+
+.nav-bar{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   text-shadow: #685f5f;
+   align-items: center;
+}
+.nav-bar img{
+    width: 50px;
+    
+}
+
+.nav-bar .nav-items{
+    
+   word-spacing: 30px;
+   list-style: none;
+}
+nav .nav-items a{
+   /* align-self: center; */
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.nav-button{
+    margin-left: 60%;
+   font-weight: bold;
+   border: 0;
+    border-radius: 6px;
+    padding: 10px 0px;
+    background: #0fdb6b;
+    
+    
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- ------- Qno.2 html--------- -->
+    <nav class="nav-bar">
+
+        <img
+        src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-healthy-food-logo-design-with-chopstick-png-image_9016805.png"
+        alt="Logo"
+      />
+        <div class="nav-items">
+            
+                <a href="#">home</a>
+                <a href="#">about</a>
+            <a href="#">contact</a>
+            
+            
+        </div>
+        <button type="button" class="nav-button">login</button>
+    </nav>
+
+ 
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   margin: auto;
+}
+button{
+    height: 90px;
+    width: 600px;
+    background: linear-gradient(to left,blue,skyblue);
+   border: 0px;
+   border-radius: 20px;
+   animation:move 1s infinite alternate ;  
+    
+}
+a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+@keyframes move{
+   0%,
+        100% {
+          transform: translateY(-25%);
+          animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        }
+        50% {
+          transform: translateY(0);
+          animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        }
+}
+
+    </style>
+</head>
+<body>
+    <button>
+        <a href="https://pwskills.com">Click Me To Visit PW Skills.</a>
+    </button>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive media assignment Qno.1</title>
+    <style>
+       .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #fff;
+      }
+        body{
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       nav{
+        height: 50px;
+        background: #242b2e;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+       }   
+       .large-screen{
+        max-width: 1200px;
+        width: 100%;
+        margin: auto;
+        justify-content: space-between;
+        display: none;
+       }
+       .small-screens{
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+       }
+         .large-screen>img{
+          width: 50px;
+         }
+         .small-screens>img{
+          width: 50px;
+         }
+         .nav-links a{
+          text-decoration: none;
+          color: #fff;
+          scale: 1.1;
+          gap: 30px;
+
+         }
+         .nav-links a:hover {
+         color: #76b5d3;
+         scale: 1.1;
+         }
+
+
+
+         .large-screen button{
+          padding: 0px 40px;
+          margin: 10px 0px;
+          border: 0px;
+          border-radius: 5px;
+          background: #0072e1;
+          color: #fff;
+          font-weight: bold;
+         }
+
+         .large-screens button:hover {
+        scale: 1.1;
+        cursor: pointer;
+         }
+
+
+
+         /* <!-- --------------- section 2 -------------------> */
+
+
+
+         .section-1{
+   
+   max-width: 1200px;
+     width: 100%;
+     margin: auto;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ /* margin-left: 40px; */
+justify-content: center;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content-1{
+ height: 600px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left: 20px;
+}
+
+.content-1 > h3{
+
+ font-size: 30px;
+ margin-bottom: 0;
+}
+.content-1 h1{
+ color: #4793e5;
+ font-size: 60px;
+ text-transform: capitalize;
+ margin-top: 5px;
+ margin-bottom: 0px;
+}
+.content-1 h4{
+ color: #4793e5;
+ font-size: 20px;
+ margin: 30px 0px;
+
+}
+.content-1 img{
+width: 60%;
+margin-bottom: 20px;
+}
+/* .content-1 p{
+ display: flex;
+ font-size: 35px;
+} */
+
+/* .content-2{
+ height: 600px;
+ width: auto;
+} */
+
+.section-1 video{
+ width: 80%;
+ border: 0;
+ outline: 0;
+
+}
+
+/* <!-- ---------------- Qno. 3----------------- --> */
+
+
+.section-3{
+    
+    
+    background: white;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 550px;
+}
+
+.section-3 h1,p{
+    text-align: center;
+}
+.content-3 > h1{
+    color: #4c4cef;
+    font-size: 70px;
+
+}
+.content-3 p{
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top:10px;
+}
+
+
+
+
+
+
+
+
+         @media  screen and (min-width:800px) {
+          .large-screen{
+            display: flex;
+          }
+          .small-screens{
+            display: none;
+          }
+         
+
+   /* <!-- --------------- section 2 -------------------> */
+
+   .section-1 {
+          flex-direction: row;
+          align-items: start;
+          justify-content: space-between;
+        }
+        .section-1 > video {
+          width: 600px;
+          height: 600px;
+        
+        }
+        /* <!-- ---------------- Qno. 3----------------- --> */
+
+        .section-3{
+        /* background: white; */
+        background: hsl(0, 8%, 8%);
+    }
+    .section-3 p{
+        color: white;
+    }
+
+         }
+
+
+
+
+    </style>
+</head>
+</head>
+<body>
+  <nav>
+    <section class="large-screen">
+      <img
+        src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a
+        ><a href="#">Contact</a>
+      </div>
+      <button>Login</button>
+    </section>
+
+    <section class="small-screens">
+      <img
+        src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="Logo"/>
+
+      <div>
+        <span class="material-symbols-outlined"> menu </span>
+      </div>
+    </section>
+  </nav>
+
+  <!-- --------------- section 2 ------------------->
+
+
+  <section class="section-1">
+    <div class="content-1">
+        <h3>say hi to</h3>
+        <h1>one card</h1>
+        <h4>co-branded card issuers :</h4>
+        <div class="sponsor-images">
+            <img
+              src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+              alt="sponsor1"/>
+          </div>
+          <p>India's best metal credit card. Built with full-stack tech. Backed by
+            the principles of simplicity, transparency, and giving back control to
+            the user.</p>
+
+
+
+    </div>
+
+
+   
+      <video src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4" controls autoplay loop ></video>
+
+   
+</section>
+
+
+    <!-- ---------------- Qno. 3----------------- -->
+    <section class="section-3">
+      <div class="content-3">
+      <h1>No Hidden Fees Ever</h1>
+      <p>No joining Fees.</p>
+      <p>No Annual Fees.</p>
+      <p>No Rewards Redemption fees.</p>
+  </div>
+  </section>
+
+
+
+
+
+</body>
+</html>

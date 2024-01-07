@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+body{
+    
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.container{
+   max-width:  1200px;
+   width: 100%;
+   
+}
+nav{
+   padding: 0px 25px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 0px;
+    
+}
+.logo{
+    display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo>img{
+    width: 30px;
+    height: 30px;
+}
+.logo>p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.button-section-1{
+    display: flex;
+    gap: 50px;
+
+}
+.button-1{
+    border: 0;
+    background-color: transparent;
+    color: #2121f1;
+    font-size: 15px;
+    font-weight: 300;
+}
+.button-2{
+    padding: 10px 20px;
+    margin: 0px;
+    border: 0.5px solid  #1f1f1f5e;
+    background-color: transparent;
+    color: #2121f1;
+    font-size: 15px;
+    font-weight: 300;
+}
+.button-3{
+    padding: 10px 20px;
+    border: 0.5px solid  #1f1f1f5e ;
+    background-color: #2121f1;
+    color: aliceblue;
+border-radius: 4px;
+    font-size: 15px;
+    font-weight: 300;
+}
+hr{
+    border: 0.2px solid  #1f1f1f5e;
+    margin-top: 0px;
+}
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+.sub-section-1{
+    justify-content: center;
+    width: 40%;
+    display: column;
+    padding: 0px 30px;
+}
+.sub-section-1>h2{
+    font-size: 50px;
+    margin-bottom: 0px;
+ word-spacing: 10px;
+}
+p{
+   
+    margin: 10px 0px;
+    padding-top: 10px;
+}
+
+.sub-section-2{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.sub-section-2>img{
+    width: 100%;
+}
